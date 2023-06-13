@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--link from Bootstrap-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--my own link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+
+<div class="modal fade" id="myModal" index="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title">For more information</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+
+        <form id="myForm" novalidate class="needs-validation" method="post">
+          <div class="mb-3">
+            <label for="userName" class="form-label">Name & Lastname</label>
+            <input name="userName" id="userName" required class="form-control" type="text" pattern="[a-zA-Z]{2,30}"
+              placeholder="Name">
+            <div class="invalid-feedback">
+
+              Wrong, please check again
+            </div>
+
+            <div class="valid-feedback">
+
+              Great! You have written your name correctly!
+
+            </div>
+
+          </div> <!--field User Name-->
+
+
+
+          <div class="mb-3">
+            <label for="userAge" class="form-label">Age</label>
+
+            <input required type="number" class="form-control" name="userAge" id="userAge">
+            <div class="invalid-feedback">
+              Wrong, please check again
+
+            </div>
+
+
+          </div>
+
+
+          <div class="mb-3">
+            <label for="userEmail" class="form-label">Email</label>
+            <input name="userEmail" placeholder="poke123@gmail.com" type="email" id="userEmail"
+              class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label for="userComments" class="form-label">Comments</label>
+            <textarea required name="userComments" id="userComments" class="form-control"></textarea>
+          </div>
+
+
+
+        </form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button form="myForm" formmethod="post" formaction="php/code.php" class="btn btn-success">SEND</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CLOSE</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-expand-sm bg-body-tertiary">
+   <div class="container-fluid">
+         
+    <a class="navbar-brand" href="index.html
+          ">   <img class="d-inline-block align-text-top"src="images/LOGO.png" alt="Logo" width="30" height="30">POKE
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="myNav">
+      <ul class="navbar-nav  ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link active"  href="index.html">Home</a>
+        </li>
+             
+        <li class="nav-item">
+          <a class="nav-link" href="#"data-bs-toggle="modal" data-bs-target="#myModal">Contact</a>
+         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.instagram.com/poke.obj/">Instagram</a>
+        </li>
+            
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<header class="container-fluid text-white">
+   <div class="row justify-content-between align-items-center">
+     <div class="col-md-4 col-lg-5">
+       <h3 class="text-uppercase">Integral design</h3>
+
+       <h1>Urban and everyday designs</h1>
+       <p>Poke is an brand created to bring integral design to everyday activities, mostly the urban ones.</p>
+
+       <a class="text-dark text-decoration-none bg-white text-center" href="mailto:franciscocar02@outlook.es?subject=Web%20Budget%20&body=Let%20me%20know%20what%20you%20want">Email</a>
+
+      </div>
+
+     <div class="col-md-5 col-lg-5">
+       <img src="images/poke.JPG" class="w-100 img-fluid" alt="work team"> 
+ 
+      </div>
+   </div>
+
+  </header>
+
+  <main class="container-fluid mb-4">
+    <section class="container-fluid mb-2">
+      <div class="row justify-content-center text-center             align-items-center">
+
+       <div class="col-md-4">
+          <h2>If you want to see more</h2>
+
+          <p>Follow me on my social media to see design processes</p>
+
+          <a href="https://www.instagram.com/poke.obj/" class="btn btn-dark">Instagram</a>
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <section class="container-fluid">
+     <div class="container fluid pt-2">
+       <nav class="navbar navbar-expand-md ">
+         <div id="myCarousel" class="carousel slide  carousel-fade"        data-bs-ride="carousel">
+           <div class="carousel-indicators">
+           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" ></button>
+           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" ></button>
+           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" ></button>
+     
+          </div>
+         <div class="carousel-inner">
+           <div class="carousel-item active">
+      
+             <img src="images/tag1.JPG" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>Tags all around the city</h5>
+               <p>All the tags make their own environment</p>
+             </div>
+           </div>
+
+           <div class="carousel-item">
+             <img src="images/tag2.JPG" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>Are tags trash?</h5>
+             </div>
+            </div>
+
+
+           <div class="carousel-item"  data-bs-interval="2000">
+             <img src="images/tag3.JPG" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>Decoration or vandalism?</h5>
+               <p>That's for you to decide</p>
+              </div>
+           </div>
+     
+          </div>
+
+          <button class="carousel-control-prev" type="button"  data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" ></span>
+     
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#MyCarousel" data-bs-slide="next">
+             <span class="carousel-control-next-icon" ></span>
+     
+          </button>
+        </nav>
+      </div>
+ 
+    </section> <!--end of carrousel--><!--end of carrousel-->
+
+    <section class="container-fluid text-black">
+     <div class=" row justify-content-between align-items-center">
+       <div class="col-md-5 col-lg-5">
+         <img src="images/tag4.JPG" class="w-100 img-fluid" alt="work team">
+        </div>
+       <div class="col-md-4 col-lg-5 ">
+         <h3 class="text-uppercase">Contact</h3>
+
+         <h1>POKE</h1>
+         <p>If you want any art commission, feel free to reach out!</p>
+
+         <a class="btn btn-dark"
+         href="poke123@gmail.com">Email</a>
+       </div>
+     </div>
+      
+
+
+    </section>
+
+   <footer class="container-fluid">
+     <p class="text-center text-white">POKELIFE</p>
+   </footer>
+
+  </main>
+
+
+    
+
+</body>
+
+</html>
+
+<!--Sabri, pude hacer la mayoría de las cosas pero tuve muchos problemas para hacer que la última imagen quede adentro de un cuadrante con el tamaño reducido. Supongo que se resuelve con algo super fácil pero bueno, traté de ser lo más honesto posible sin pedirle a nadie que me ayude para ver si me salía pero no pude. Igualmente siento que pude hacer la mayoría bien.-->
